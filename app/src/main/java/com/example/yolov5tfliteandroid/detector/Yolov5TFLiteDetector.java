@@ -48,7 +48,7 @@ public class Yolov5TFLiteDetector {
 //    private Size INPNUT_SIZE = new Size(320, 320);
 
     private Size INPNUT_SIZE = new Size(640, 640);
-    private final int[] OUTPUT_SIZE = new int[]{1, 25200,    10};
+    private final int[] OUTPUT_SIZE = new int[]{1, 25200, 8};
     private Boolean IS_INT8 = false;
     private final float DETECT_THRESHOLD = 0.25f;
     private final float IOU_THRESHOLD = 0.45f;
@@ -59,7 +59,7 @@ public class Yolov5TFLiteDetector {
     private final String MODEL_YOLOV5M = "yolov5m-fp16-320.tflite";
     private final String MODEL_YOLOV5S_INT8 = "yolov5s-int8-320.tflite";
 
-    private final String MODEL_YOLOV5_CUSTOM = "litemodel_with_md640.tflite";
+    private final String MODEL_YOLOV5_CUSTOM = "dentistsmile_litemodel_with_md640.tflite";
     private String LABEL_FILE = "coco_label.txt";
     MetadataExtractor.QuantizationParams input5SINT8QuantParams = new MetadataExtractor.QuantizationParams(0.003921568859368563f, 0);
     MetadataExtractor.QuantizationParams output5SINT8QuantParams = new MetadataExtractor.QuantizationParams(0.006305381190031767f, 5);
